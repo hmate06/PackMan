@@ -9,3 +9,21 @@
 .div {
     line-height: 150%;
 }
+
+.button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(111, 240, 111);
+    
+    
+}
+
+.gomb {
+    color: black;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(185, 183, 183);
+}
