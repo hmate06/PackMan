@@ -23,3 +23,17 @@
 body {
     background-color: rgb(185, 183, 183);
 }
+
+.keret {
+    border-top: 4px solid rgb(16, 176, 5);
+    border-right: 4px solid rgb(16, 176, 5);
+    padding: 25px;
+}
+
+.keret2 {
+    border-left: 4px solid rgb(4, 44, 1);
+    border-bottom: 4px solid rgb(4, 44, 1);
+   
+    
+}
+
