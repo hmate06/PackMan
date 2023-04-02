@@ -14,14 +14,10 @@
     width: 20vw;
     height: 4vw;
     background-color: rgb(111, 240, 111);
-    
-    
-}
-
-.gomb {
     color: black;
     font-size: 2vw;
     text-decoration: none;
+    
 }
 
 body {
@@ -30,4 +26,15 @@ body {
     background-position: center;
     min-height: fit-content;
     min-width: fit-content;
+}
+
+.keret {
+    border-top: 4px solid rgb(16, 176, 5);
+    border-right: 4px solid rgb(16, 176, 5);
+    padding: 25px;
+}
+
+.keret2 {
+    border-left: 4px solid rgb(4, 44, 1);
+    border-bottom: 4px solid rgb(4, 44, 1);
 }
