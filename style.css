@@ -11,8 +11,8 @@
 }
 
 .button {
-    width: 250px;
-    height: 50px;
+    width: 20vw;
+    height: 4vw;
     background-color: rgb(111, 240, 111);
     color: black;
     font-size: 2vw;
@@ -21,7 +21,11 @@
 }
 
 body {
-    background-color: rgb(185, 183, 183);
+    background-image: url(források/bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 
 .keret {
@@ -33,9 +37,4 @@ body {
 .keret2 {
     border-left: 4px solid rgb(4, 44, 1);
     border-bottom: 4px solid rgb(4, 44, 1);
-   
-    
 }
-
-
-
