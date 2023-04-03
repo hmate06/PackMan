@@ -22,6 +22,7 @@
   background-image: url(források/bg.jpg);
   background-repeat: repeat-y;
   background-position: center;
+  background-size: cover;
   min-height: fit-content;
   min-width: fit-content;
 }
