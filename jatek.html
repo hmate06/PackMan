@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PackMan</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Főoldal</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="jatek.html">Játék</a></li>
-            <li><a href="custom.html">Egyéni</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-        
-      
-   
-    
-</body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body id="bodyJatek">
+    <div id="Navbar"></div>
+    <script src="navbar.js"></script>
+
+    <div id="canvasJatek">
+      <div>
+        <h2>Pack-Man</h2>
+        <canvas id="gameCanvas"></canvas>
+      </div>
+      <script src="script/Game.js" type="module"></script>
+    </div>
+  </body>
 </html>

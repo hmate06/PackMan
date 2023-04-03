@@ -1,0 +1,1 @@
+$("#Navbar").load("navbar.html");
