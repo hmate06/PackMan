@@ -1,79 +1,80 @@
 .index {
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 30px;
-}
-
-.div {
-  line-height: 150%;
-}
-
-.button {
-  width: 20vw;
-  height: 4vw;
-  background-color: rgb(111, 240, 111);
-  color: black;
-  font-size: 2vw;
-  text-decoration: none;
-}
-
-#bodyIndex {
-  background-image: url(források/bg.jpg);
-  background-repeat: repeat-y;
-  background-position: center;
-  background-size: cover;
-  min-height: fit-content;
-  min-width: fit-content;
-}
-
-.keret {
-  border-top: 4px solid rgb(16, 176, 5);
-  border-right: 4px solid rgb(16, 176, 5);
-  padding: 25px;
-}
-
-.keret2 {
-  border-left: 4px solid rgb(4, 44, 1);
-  border-bottom: 4px solid rgb(4, 44, 1);
-}
-
-#gameCanvas {
-  box-shadow: 10px 10px 20px black;
-}
-
-#canvasJatek {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-#bodyJatek {
-  height: 100vh;
-}
-
-#navbar {
-  overflow: hidden;
-  width: 100vw;
-  font-size: 1.2vw;
-}
-
-h1 {
-  text-align: center;
-  font-family: "Alkatra";
-  font-size: 4vw;
-}
-
-h2 {
-  font-family: "Alkatra";
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-h3 {
-  font-family: "Alkatra";
-  font-size: 2vw;
-}
-
-li {
-  font-family: "Alkatra";
-}
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 30px;
+  }
+  
+  .div {
+    line-height: 150%;
+  }
+  
+  .button {
+    width: 20vw;
+    height: 4vw;
+    background-color: rgb(111, 240, 111);
+    color: black;
+    font-size: 2vw;
+    text-decoration: none;
+  }
+  
+  #bodyIndex {
+    background-image: url(források/bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    min-height: fit-content;
+    min-width: fit-content; 
+  }
+  
+  .keret {
+    border-top: 4px solid rgb(16, 176, 5);
+    border-right: 4px solid rgb(16, 176, 5);
+    padding: 25px;
+  }
+  
+  .keret2 {
+    border-left: 4px solid rgb(4, 44, 1);
+    border-bottom: 4px solid rgb(4, 44, 1);
+  }
+  
+  #gameCanvas {
+    box-shadow: 10px 10px 20px black;
+  }
+  
+  #canvasJatek {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #bodyJatek {
+    height: 100vh;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    width: 100vw;
+    font-size: 1.2vw;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: "Alkatra";
+    font-size: 4vw;
+  }
+  
+  h2 {
+    font-family: "Alkatra";
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: "Alkatra";
+    font-size: 2vw;
+  }
+  
+  li {
+    font-family: "Alkatra";
+  }
+  
