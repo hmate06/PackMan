@@ -159,6 +159,8 @@ export default class Pacman {
       pacmanImage2.src = "../források/mate-lsd.jpg"; 
       this.pacmanImages = [pacmanImage2];
       this.pacmanImageIndex = 0;
+
+      
     }
   }
 }
