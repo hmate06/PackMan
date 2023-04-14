@@ -40,9 +40,9 @@ export default class Pacman {
 
   #loadPacmanImages() {
     const pacmanImage1 = new Image();
-    pacmanImage1.src = "../források/mate-mini.jpg";
+    pacmanImage1.src = "../források/mate-mini.jpg"; 
     this.pacmanImages = [pacmanImage1];
-    this.pacmanImageIndex = 0;
+    this.pacmanImageIndex = 0; 
   }
 
   #keydown = (event) => {
@@ -134,6 +134,10 @@ export default class Pacman {
       let LSDTimer = setTimeout(() => {
         this.LSDActive = false;
         this.LSDAboutToExpire = false;
+        const pacmanImage1 = new Image();
+        pacmanImage1.src = "../források/mate-mini.jpg";
+        this.pacmanImages = [pacmanImage1];
+        this.pacmanImageIndex = 0;
       }, 1000 * 6);
 
       this.timers.push(this.LSDTimer);
@@ -151,6 +155,10 @@ export default class Pacman {
       collideEnemies.forEach((enemy) => {
         enemies.splice(enemies.indexOf(enemy), 1);
       });
+      const pacmanImage2 = new Image()
+      pacmanImage2.src = "../források/mate-lsd.jpg"; 
+      this.pacmanImages = [pacmanImage2];
+      this.pacmanImageIndex = 0;
     }
   }
 }
