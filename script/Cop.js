@@ -45,27 +45,11 @@ export default class Enemy {
 
   #setImage(ctx, pacman) {
     if (pacman.LSDActivate) {
-      this.#setImageWhenLSDIsActive(pacman);
+      this.image = this.scaredGhost;
     } else {
       this.image = this.normalGhost;
     }
     ctx.drawImage(this.image, this.x, this.y, this.tileSize, this.tileSize);
-  }
-
-  #setImageWhenLSDIsActive(pacman) {
-    if (pacman.LSDAboutToExpire) {
-      this.scaredAboutToExpireTimer--;
-      if (this.scaredAboutToExpireTimer === 0) {
-        this.scaredAboutToExpireTimer = this.scaredAboutToExpireTimerDefault;
-        if (this.image === this.scaredGhost) {
-          this.image = this.scaredGhost2;
-        } else {
-          this.image = this.scaredGhost;
-        }
-      }
-    } else {
-      this.image = this.scaredGhost;
-    }
   }
 
   #changeDirection() {
@@ -131,10 +115,5 @@ export default class Enemy {
 
     this.scaredGhost = new Image();
     this.scaredGhost.src = "../források/copdog.jpg";
-
-    this.scaredGhost2 = new Image();
-    this.scaredGhost2.src = "../források/cop-mini.jpg";
-
-    this.image = this.normalGhost;
   }
 }
