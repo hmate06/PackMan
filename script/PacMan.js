@@ -155,12 +155,11 @@ export default class Pacman {
       collideEnemies.forEach((enemy) => {
         enemies.splice(enemies.indexOf(enemy), 1);
       });
+
       const pacmanImage2 = new Image()
       pacmanImage2.src = "../források/mate-lsd.jpg"; 
       this.pacmanImages = [pacmanImage2];
       this.pacmanImageIndex = 0;
-
-      
     }
   }
 }
