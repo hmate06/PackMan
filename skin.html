@@ -29,9 +29,16 @@
         <br>
 
         <button id="submit">Alkalkmaz</button>
+        <br>
+
+        <p id="test">kys</p>
+        <br>
+        <button id="what">teszt</button>
+
+
 
         <script>
-        document.getElementById('submit').onclick= function(){
+        document.getElementById('submit').onclick= function1(){
           var value= document.getElementsByName('skin');
           for (var radio of value){
           if (radio.checked) {
@@ -40,5 +47,12 @@
             }
            }}
           </script>
+
+        <script>
+        document.getElementById('what').onclick= function2(){
+          var skinvalue= localStorage.getItem('skinvalue')
+          document.getElementById("test").innerHTML = skinvalue;
+        }
+        </script>
     </body>
 </html>
