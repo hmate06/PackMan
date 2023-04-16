@@ -149,10 +149,22 @@ export default class Pacman {
 
   #changeSkin() {
     if (this.LSDActive) {
-      const pacmanImage2 = new Image()
-      pacmanImage2.src = "../források/mate-lsd.jpg"; 
-      this.pacmanImages = [pacmanImage2];
-      this.pacmanImageIndex = 0;
+      var skinvalue= localStorage.getItem('skinvalue')
+      if (skinvalue === 'mate'){
+        const pacmanImage1 = new Image();
+        pacmanImage1.src = "../források/mate-lsd.jpg"; 
+        this.pacmanImages = [pacmanImage1];
+        this.pacmanImageIndex = 0;}
+      if (skinvalue === 'bebe'){
+        const pacmanImage2 = new Image();
+        pacmanImage2.src = "../források/bebe-lsd.jpg"; 
+        this.pacmanImages = [pacmanImage2];
+        this.pacmanImageIndex = 0;}
+      if (skinvalue === 'gabor'){
+        const pacmanImage3 = new Image();
+        pacmanImage3.src = "../források/gabor-lsd.jpg"; 
+        this.pacmanImages = [pacmanImage3];
+        this.pacmanImageIndex = 0;}
     }
     
     if (this.LSDActive === false) {
