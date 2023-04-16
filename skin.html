@@ -38,7 +38,7 @@
 
 
         <script>
-        document.getElementById('submit').onclick= function1(){
+        document.getElementById('submit').onclick= function() {
           var value= document.getElementsByName('skin');
           for (var radio of value){
           if (radio.checked) {
@@ -49,7 +49,7 @@
           </script>
 
         <script>
-        document.getElementById('what').onclick= function2(){
+        document.getElementById('what').onclick= function() {
           var skinvalue= localStorage.getItem('skinvalue')
           document.getElementById("test").innerHTML = skinvalue;
         }
