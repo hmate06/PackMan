@@ -19,7 +19,6 @@ export default class Pacman {
 
     document.addEventListener("keydown", this.#keydown);
 
-    this.#loadPacmanImages();
   }
 
   draw(ctx, pause, enemies) {
@@ -29,6 +28,7 @@ export default class Pacman {
     this.#eatJoint();
     this.#eatLSD();
     this.#eatGhost(enemies);
+    this.#changeSkin()
     ctx.drawImage(
       this.pacmanImages[this.pacmanImageIndex],
       this.x,
@@ -36,26 +36,6 @@ export default class Pacman {
       this.tileSize,
       this.tileSize
     );
-  }
-
-  #loadPacmanImages() {
-    var skinvalue= localStorage.getItem('skinvalue')
-    if (skinvalue === 'mate'){
-      const pacmanImage1 = new Image();
-      pacmanImage1.src = "../források/mate-mini.jpg"; 
-      this.pacmanImages = [pacmanImage1];
-      this.pacmanImageIndex = 0;}
-    if (skinvalue === 'bebe'){
-      const pacmanImage2 = new Image();
-      pacmanImage2.src = "../források/bebe-mini.jpg"; 
-      this.pacmanImages = [pacmanImage2];
-      this.pacmanImageIndex = 0;}
-    if (skinvalue === 'gabor'){
-      const pacmanImage3 = new Image();
-      pacmanImage3.src = "../források/gabor-mini.jpg"; 
-      this.pacmanImages = [pacmanImage3];
-      this.pacmanImageIndex = 0;}
-    
   }
 
   #keydown = (event) => {
@@ -147,10 +127,6 @@ export default class Pacman {
       let LSDTimer = setTimeout(() => {
         this.LSDActive = false;
         this.LSDAboutToExpire = false;
-        const pacmanImage1 = new Image();
-        pacmanImage1.src = "../források/mate-mini.jpg";
-        this.pacmanImages = [pacmanImage1];
-        this.pacmanImageIndex = 0;
       }, 1000 * 6);
 
       this.timers.push(this.LSDTimer);
@@ -168,11 +144,34 @@ export default class Pacman {
       collideEnemies.forEach((enemy) => {
         enemies.splice(enemies.indexOf(enemy), 1);
       });
+    }
+  }
 
+  #changeSkin() {
+    if (this.LSDActive) {
       const pacmanImage2 = new Image()
       pacmanImage2.src = "../források/mate-lsd.jpg"; 
       this.pacmanImages = [pacmanImage2];
       this.pacmanImageIndex = 0;
+    }
+    
+    if (this.LSDActive === false) {
+      var skinvalue= localStorage.getItem('skinvalue')
+      if (skinvalue === 'mate'){
+        const pacmanImage1 = new Image();
+        pacmanImage1.src = "../források/mate-mini.jpg"; 
+        this.pacmanImages = [pacmanImage1];
+        this.pacmanImageIndex = 0;}
+      if (skinvalue === 'bebe'){
+        const pacmanImage2 = new Image();
+        pacmanImage2.src = "../források/bebe-mini.jpg"; 
+        this.pacmanImages = [pacmanImage2];
+        this.pacmanImageIndex = 0;}
+      if (skinvalue === 'gabor'){
+        const pacmanImage3 = new Image();
+        pacmanImage3.src = "../források/gabor-mini.jpg"; 
+        this.pacmanImages = [pacmanImage3];
+        this.pacmanImageIndex = 0;}
     }
   }
 }
