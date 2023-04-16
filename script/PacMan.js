@@ -39,10 +39,23 @@ export default class Pacman {
   }
 
   #loadPacmanImages() {
-    const pacmanImage1 = new Image();
-    pacmanImage1.src = "../források/mate-mini.jpg"; 
-    this.pacmanImages = [pacmanImage1];
-    this.pacmanImageIndex = 0; 
+    var skinvalue= localStorage.getItem('skinvalue')
+    if (skinvalue === 'mate'){
+      const pacmanImage1 = new Image();
+      pacmanImage1.src = "../források/mate-mini.jpg"; 
+      this.pacmanImages = [pacmanImage1];
+      this.pacmanImageIndex = 0;}
+    if (skinvalue === 'bebe'){
+      const pacmanImage2 = new Image();
+      pacmanImage2.src = "../források/bebe-mini.jpg"; 
+      this.pacmanImages = [pacmanImage2];
+      this.pacmanImageIndex = 0;}
+    if (skinvalue === 'gabor'){
+      const pacmanImage3 = new Image();
+      pacmanImage3.src = "../források/gabor-mini.jpg"; 
+      this.pacmanImages = [pacmanImage3];
+      this.pacmanImageIndex = 0;}
+    
   }
 
   #keydown = (event) => {
