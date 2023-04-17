@@ -18,18 +18,38 @@
     <div id="Navbar"></div>
     <script src="navbar.js"></script>
 
-    <div class="d-flex flex-row">
-      <input type="radio" id="mate" name="skin" value="mate" />
-      <label for="mate">Máté</label>
-      <br />
-      <input type="radio" id="bebe" name="skin" value="bebe" />
-      <label for="bebe">Bebe</label>
-      <br />
-      <input type="radio" id="gabor" name="skin" value="gabor" />
-      <label for="gabor">Gábor</label>
-      <br />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bg-primary" style="width: fit-content">
+            <img class="card-img-top" src="források/mate_1000x1000.jpg" alt="Máté" />
+            <div class="card-body">
+              <input type="radio" id="mate" name="skin" value="mate" />
+              <label for="mate">Máté</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-primary" style="width: fit-content">
+            <img class="card-img-top" src="források/bebe.jpg" alt="Bebe" />
+            <div class="card-body">
+              <input type="radio" id="bebe" name="skin" value="bebe" />
+              <label for="bebe">Bebe</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-primary" style="width: fit-content">
+            <img class="card-img-top" src="források/gabor1.JPG" alt="Gábor" />
+            <div class="card-body">
+              <input type="radio" id="gabor" name="skin" value="gabor" />
+              <label for="gabor">Gábor</label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <button id="submit">Alkalmaz</button>
+    <button id="submit" class="index">Alkalmaz</button>
     <br />
 
     <script>
