@@ -77,4 +77,16 @@
   li {
     font-family: "Alkatra";
   }
+
+  .restart {
+    width: 20vw;
+    height: 4vw;
+    background-color: rgb(111, 240, 111);
+    color: black;
+    font-size: 2vw;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40vw;
+    
+  }
   
